@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="google-site-verification"
+      content="OGsN9sG-SXbpGHGtWL0XgERbktbmPkyT5IfduMIdQUE"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="jquery.countdownTimer.css" />
+    <!-- Favicon -->
+    <title>Random Queote Generator</title>
+  </head>
+
+  <body>
+    <div class="home" id="home">
+      <div id="particles-js"></div>
+      <div id="containermain">
+        <div class="content">
+          <marquee style="color: #9c9388a1" direction="left" scrollamount="3"
+            >Created By
+            <b
+              ><a
+                style="text-decoration: none; color: aqua"
+                href="https://github.com/chintamani-pala/"
+                >Chintamani Pala</a
+              > </b
+            ><span id="contactspan"></span>
+          </marquee>
+          <div class="questionparent">
+            <p class="questions" id="questions"></p>
+          </div>
+          <!-- <div class="parentanswer">
+          <div class="optionsfield">
+            <input type="radio" class="checkinput" name="option" for="option1" id="option1in"/><label class="inputlable" for="option1in"
+            id="option1" ></label><br />
+            <input type="radio" class="checkinput" name="option" for="option2" id="option2in"/><label class="inputlable" for="option2in"
+              id="option2"></label><br />
+            <input type="radio" class="checkinput" name="option" for="option3" id="option3in" /><label class="inputlable" for="option3in"
+              id="option3"></label><br />
+            <input type="radio" class="checkinput" name="option" for="option4" id="option4in" /><label class="inputlable" for="option4in"
+              id="option4"></label>
+          </div> -->
+          <!-- </div> -->
+          <p id="isanscorrect"></p>
+          <div class="questiontypes">
+            <label for="trivia_category" class="trivia_category_label"
+              >Select Category:
+            </label>
+            <select
+              id="category"
+              name="category"
+              class="trivia_category"
+            >
+              <option value="age">age</option>
+              <option value="alone">alone</option>
+              <option value="amazing">amazing</option>
+              <option value="anger">anger</option>
+              <option value="architecture">architecture</option>
+              <option value="art">art</option>
+              <option value="attitude">attitude</option>
+              <option value="beauty">beauty</option>
+              <option value="best">best</option>
+              <option value="birthday">birthday</option>
+              <option value="car">car</option>
+              <option value="change">change</option>
+              <option value="communications">communications</option>
+              <option value="computers">computers</option>
+              <option value="cool">cool</option>
+              <option value="courage">courage</option>
+              <option value="dad">dad</option>
+              <option value="dating">dating</option>
+              <option value="death">death</option>
+              <option value="design">design</option>
+              <option value="dreams">dreams</option>
+              <option value="education">education</option>
+              <option value="environmental">environmental</option>
+              <option value="equality">equality</option>
+              <option value="experience">experience</option>
+              <option value="failure">failure</option>
+              <option value="faith">faith</option>
+              <option value="family">family</option>
+              <option value="famous">famous</option>
+              <option value="fear">fear</option>
+              <option value="fitness">fitness</option>
+              <option value="food">food</option>
+              <option value="forgiveness">forgiveness</option>
+              <option value="freedom">freedom</option>
+              <option value="friendship">friendship</option>
+              <option value="funny">funny</option>
+              <option value="future">future</option>
+              <option value="god">god</option>
+              <option value="good">good</option>
+              <option value="government">government</option>
+              <option value="graduation">graduation</option>
+              <option value="great">great</option>
+              <option value="happiness" selected>happiness</option>
+              <option value="health">health</option>
+              <option value="history">history</option>
+              <option value="home">home</option>
+              <option value="hope">hope</option>
+              <option value="humor">humor</option>
+              <option value="experience">experience</option>
+              <option value="imagination">imagination</option>
+              <option value="inspirational">inspirational</option>
+              <option value="intelligence">intelligence</option>
+              <option value="jealousy">jealousy</option>
+              <option value="knowledge">knowledge</option>
+              <option value="leadership">leadership</option>
+              <option value="learning">learning</option>
+              <option value="legal">legal</option>
+              <option value="life">life</option>
+              <option value="love">love</option>
+              <option value="marriage">marriage</option>
+              <option value="medical">medical</option>
+              <option value="men">men</option>
+              <option value="mom">mom</option>
+              <option value="money">money</option>
+              <option value="morning">morning</option>
+              <option value="movies">movies</option>
+              <option value="success">success</option>
+              </select
+            ><br />
+          </div>
+          <button
+            name="nextQueote"
+            id="nextQueote"
+            style="margin-right: 10px"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/security.js"></script>
+  </body>
+</html>
