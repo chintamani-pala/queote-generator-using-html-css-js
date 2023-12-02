@@ -20,7 +20,7 @@ This web application generates random quotes using the API-Ninjas API and displa
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/quote-generator.git
+   git clone https://github.com/chintamani-pala/queote-generator-using-html-css-js.git
     ```
 2. **Open index.html in a Web Browser:**
    - **After cloning, open index.html in any modern web browser.**
@@ -32,7 +32,13 @@ This web application generates random quotes using the API-Ninjas API and displa
   -  **API Used: API-Ninjas API**
   -  **Endpoints: The API offers specific endpoints for fetching quotes.**
 # Screenshots
-
+   ![image](https://github.com/chintamani-pala/queote-generator-using-html-css-js/assets/111286013/9ed50404-d330-43a7-a9fa-f5adda2f3df5)
+# Contributing
+   **Contributions are welcome! Feel free to fork this repository, make improvements, and submit a pull request.**
+# Credits
+   - **Credit API-Ninjas for providing the quote service.**
+# License
+   **This project is licensed under the MIT License.**
    
 
 
